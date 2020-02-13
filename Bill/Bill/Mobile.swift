@@ -7,7 +7,12 @@
 //
 
 import Foundation
-class Mobile
+class Mobile:Bill
 {
+    var Mobile_Manufacturer_Name: String
+    var Plan_Name: String
+    var Mobile_Number: Int
+    var Internet_GB_Used: Double
+    var Minutes_Used: Double
     
 }
