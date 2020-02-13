@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Hydro
+class Hydro: Bill
 {
-    
+    var Agency_Name: String
+    var Unit_Consumed: Double
 }
