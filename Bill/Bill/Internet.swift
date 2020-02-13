@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class Internet
+class Internet: Bill
 {
-    
+    var provider_Name: String
+    var Internet_GB_Used: Double
 }
