@@ -10,5 +10,9 @@ import Foundation
 
 class Bill
 {
+    var Bill_Id: Int
+    var Bill_Date: Date
+    var Bill_Type: String
+    var Total_Bill_Amount: Double
     
 }
