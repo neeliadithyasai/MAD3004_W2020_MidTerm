@@ -20,7 +20,10 @@ class Customer
     }
     var Email_Id: String
     var Bills: [String: Any] = ["01": I1.Bill_Type, "02": M1.Bill_Type ]
-   
+    var Total_Amount_to_pay: Double
+      {
+          return self.Calculated_Bill()
+      }
     
     init(Customer_Id: Int, Email_Id: String) {
        self.Customer_Id = Customer_Id
