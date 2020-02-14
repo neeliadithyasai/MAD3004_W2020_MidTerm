@@ -31,6 +31,17 @@ class Customer
      
    }
     
+    private func Calculated_Bill() -> Double
+    {
+        var t = 0.0
+        
+       t=t+I1.Total_Bill_Amount+M1.Total_Bill_Amount
+       
+        return t
+    }
+
+    
+    
      
 
 
