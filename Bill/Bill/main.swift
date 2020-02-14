@@ -38,3 +38,6 @@ var H1 = Hydro(Bill_Id: 01, Bill_Date: date3, Bill_Type: BILL_TYPE.HYDRO, Total_
 
     H1.display()
 
+var C1 =  Customer(Customer_Id: 01, Email_Id: "neeliadithyasai@gmail.com")
+
+    C1.display()
