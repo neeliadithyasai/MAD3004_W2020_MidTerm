@@ -40,6 +40,21 @@ class Customer
         return t
     }
 
+    func display()
+    {
+         print("***************customer****************")
+        print("Customer_Id \(Customer_Id)")
+        print("full name:\(fullName)")
+        print("Email_Id \(Email_Id)")
+        for (billno, billname) in Bills
+             {
+                  print("\(billno): \(billname)")
+              }
+     
+        print("Total_Amount_to_pay \(Total_Amount_to_pay)")
+        
+        
+    }
     
     
      
