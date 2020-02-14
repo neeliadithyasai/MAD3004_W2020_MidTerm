@@ -17,7 +17,7 @@ class Mobile:Bill
     var Internet_GB_Used: Double = 0.0
     var Minutes_Used: Double = 0.0
     
-    init(Bill_Id: Int, Bill_Date: Date, Bill_Type: BILL_TYPE, Total_Bill_Amount: Double,Mobile_Manufacturer_Name: String, Plan_Name: String, Mobile_Number: Int, Internet_GB_Used: Double, Minutes_Used: Double) {
+    init(Bill_Id: Int, Bill_Date: DateComponents, Bill_Type: BILL_TYPE, Total_Bill_Amount: Double,Mobile_Manufacturer_Name: String, Plan_Name: String, Mobile_Number: Int, Internet_GB_Used: Double, Minutes_Used: Double) {
         
         super.init(Bill_Id: Bill_Id, Bill_Date: Bill_Date, Bill_Type: Bill_Type, Total_Bill_Amount: Total_Bill_Amount)
         self.Mobile_Manufacturer_Name = Mobile_Manufacturer_Name
