@@ -12,30 +12,36 @@ class Customer
 {
     
     var Customer_Id: Int
-    var First_Name: String = " adithya"
-    var Last_Name: String = " Sai"
+    var First_Name: String
+    var Last_Name: String
     var fullName : String //full name will never reserve memeory
     {
         return "\(First_Name) \(Last_Name)"
     }
     var Email_Id: String
-    var Bills: [String: Any] = ["01": I1.Bill_Type, "02": M1.Bill_Type ]
+    var Bills: [String: Double]
     var Total_Amount_to_pay: Double
       {
           return self.Calculated_Bill()
       }
     
-    init(Customer_Id: Int, Email_Id: String) {
+    init(Customer_Id: Int, First_Name: String ,Last_Name: String,Email_Id: String, Bills: [String: Double]) {
        self.Customer_Id = Customer_Id
+        self.First_Name = First_Name
+        self.Last_Name = Last_Name
        self.Email_Id = Email_Id
+        self.Bills = Bills
      
    }
     
     private func Calculated_Bill() -> Double
     {
         var t = 0.0
-        
-       t=t+I1.Total_Bill_Amount+M1.Total_Bill_Amount
+        for (billno, billname) in Bills
+        {
+            print("\(billno)")
+            t=t + billname
+         }
        
         return t
     }
