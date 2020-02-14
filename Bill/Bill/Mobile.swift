@@ -11,11 +11,11 @@ class Mobile:Bill
 {
    
     
-    var Mobile_Manufacturer_Name: String?
-    var Plan_Name: String?
-    var Mobile_Number: Int?
-    var Internet_GB_Used: Double?
-    var Minutes_Used: Double?
+    var Mobile_Manufacturer_Name: String = ""
+    var Plan_Name: String = ""
+    var Mobile_Number: Int = 0
+    var Internet_GB_Used: Double = 0.0
+    var Minutes_Used: Double = 0.0
     
     init(Bill_Id: Int, Bill_Date: Date, Bill_Type: BILL_TYPE, Total_Bill_Amount: Double,Mobile_Manufacturer_Name: String, Plan_Name: String, Mobile_Number: Int, Internet_GB_Used: Double, Minutes_Used: Double) {
         
@@ -25,6 +25,21 @@ class Mobile:Bill
         self.Mobile_Number = Mobile_Number
         self.Internet_GB_Used = Internet_GB_Used
         self.Minutes_Used = Minutes_Used
+    }
+    
+    override func display() {
+        
+        print("*********MOBILE BILL ********")
+        print("Bill_Id \(Bill_Id)")
+        print("Bill_Date \(Bill_Date)")
+        print("Bill_Type \(Bill_Type)")
+        print("Total_Bill_Amount \(Total_Bill_Amount)")
+        print("Mobile_Manufacturer_Name\(Mobile_Manufacturer_Name)")
+        print("Mobile_Number\(Mobile_Number)")
+        print("Internet_GB_Used\(Internet_GB_Used)")
+        print("Minutes_Used\(Minutes_Used)")
+        
+        
     }
     
 }

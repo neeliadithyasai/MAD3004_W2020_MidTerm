@@ -21,7 +21,7 @@ class Internet: Bill
     }
     
     override func display() {
-        
+
         print("*********INTERNET BILL ********")
         print("Bill_Id \(Bill_Id)")
         print("Bill_Date \(Bill_Date)")
@@ -30,5 +30,7 @@ class Internet: Bill
         print("provider_Name \(provider_Name)")
         print("Internet_GB_Used\(Internet_GB_Used)")
     }
+
+    
    
 }
