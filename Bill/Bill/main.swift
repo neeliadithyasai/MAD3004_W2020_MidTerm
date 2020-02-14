@@ -8,9 +8,6 @@
 
 import Foundation
 
+var I1 = Internet(Bill_Id: 01, Bill_Date: Date(), Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 95, provider_Name: "Bell", Internet_GB_Used: 5.5)
 
-var b1 = Bill(Bill_Id: 01, Bill_Date: Date(), Bill_Type: BILL_TYPE.HYDRO, Total_Bill_Amount: 50.5)
-   
-    b1.display()
-
-
+    I1.display()
