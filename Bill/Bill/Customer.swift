@@ -10,6 +10,8 @@ import Foundation
 
 class Customer
 {
+    
+    
     var Customer_Id: Int
     var First_Name: String = " "
     var Last_Name: String = " "
@@ -19,4 +21,12 @@ class Customer
     }
     var Email_Id: String
     var Total_Amount_to_pay: Double
+    
+    init(Customer_Id: Int, Email_Id: String, Total_Amount_to_pay: Double) {
+        self.Customer_Id = Customer_Id
+        self.Email_Id = Email_Id
+        self.Total_Amount_to_pay = Total_Amount_to_pay
+    }
+    
+
 }
