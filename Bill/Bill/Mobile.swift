@@ -32,12 +32,12 @@ class Mobile:Bill
         print("*********MOBILE BILL ********")
         print("Bill_Id \(Bill_Id)")
         print("Bill_Date \(Bill_Date)")
-        print("Bill_Type \(Bill_Type)")
-        print("Total_Bill_Amount \(Total_Bill_Amount)")
+        print("Bill_Type \(Bill_Type)")        
         print("Mobile_Manufacturer_Name\(Mobile_Manufacturer_Name)")
         print("Mobile_Number\(Mobile_Number)")
         print("Internet_GB_Used\(Internet_GB_Used)")
         print("Minutes_Used\(Minutes_Used)")
+        print("Total_Bill_Amount \(Total_Bill_Amount)")
         
         
     }
