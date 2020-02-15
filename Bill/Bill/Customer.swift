@@ -19,13 +19,13 @@ class Customer
         return "\(First_Name) \(Last_Name)"
     }
     var Email_Id: String
-    var Bills: [String: Double]
+    var Bills: [String: Bill]
     var Total_Amount_to_pay: Double
       {
           return self.Calculated_Bill()
       }
     
-    init(Customer_Id: Int, First_Name: String ,Last_Name: String,Email_Id: String, Bills: [String: Double]) {
+    init(Customer_Id: Int, First_Name: String ,Last_Name: String,Email_Id: String, Bills: [String: Bill]) {
        self.Customer_Id = Customer_Id
         self.First_Name = First_Name
         self.Last_Name = Last_Name
@@ -40,21 +40,28 @@ class Customer
         for (billno, billname) in Bills
         {
             print("\(billno)")
-            t=t + billname
+            t=t + billname.Total_Bill_Amount
          }
-       
+
         return t
     }
 
     func display()
     {
-         print("***************customer****************")
-        print("Customer_Id \(Customer_Id)")
-        print("full name:\(fullName)")
-        print("Email_Id \(Email_Id)")
+        print("Details of customer along with it's all bills details")
+        print("Customer Id :  \(Customer_Id)")
+        print("Customer Full Name : \(fullName)")
+        print("Customer Email ID : \(Email_Id)")
+        print("---- Bill Information ----")
+        print("***************************************")
         for (billno, billname) in Bills
              {
-                  print("\(billno): \(billname)")
+                print("Bill no : \(billno)")
+                print("Bill Type : \(billname.Bill_Type)")
+                print("Bill ID : \(billname.Bill_Id)")
+                print("Bill Date : \(billname.Bill_Date)")
+                print("Bill Amount : \(billname.Total_Bill_Amount)")
+                
               }
      
         print("Total_Amount_to_pay \(Total_Amount_to_pay)")
