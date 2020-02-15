@@ -28,9 +28,7 @@ class Internet: Bill
         print("Bill Type : \(Bill_Type)")
         print("Provider Name : \(provider_Name)")
         print("Internet Usage : \(Internet_GB_Used) GB")
-        print("***********************************************")
-        print("Total Bill Amount to Pay :\(Total_Bill_Amount)")
-        print("***********************************************")
+        print("Bill Amount : \(Total_Bill_Amount)")
         
     }
 

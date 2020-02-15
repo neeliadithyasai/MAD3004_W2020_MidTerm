@@ -37,9 +37,7 @@ class Mobile:Bill
         print("Mobile Number : \(Mobile_Number)")
         print("Internet Usage : \(Internet_GB_Used) GB")
         print("Minutes Usage : \(Minutes_Used) minutes")
-        print("************************************************")
-        print("Total Bill Amount to Pay :\(Total_Bill_Amount)")
-        print("************************************************")
+        print("Bill Amount :\(Total_Bill_Amount)")
         
         
     }
