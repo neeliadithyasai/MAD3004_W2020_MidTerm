@@ -26,20 +26,20 @@ let date3 = DateComponents( year: 2016, month: 10, day: 25)
 
 
 
-var I1 = Internet(Bill_Id: 01, Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 95, provider_Name: "Bell", Internet_GB_Used: 5.5)
+var I1 = Internet(Bill_Id: "INB001", Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 95, provider_Name: "Bell", Internet_GB_Used: 5.5)
 
  //  I1.display()
-var I2 = Internet(Bill_Id: 01, Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 95, provider_Name: "Bell", Internet_GB_Used: 5.5)
+var I2 = Internet(Bill_Id: "INB002", Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 95, provider_Name: "Bell", Internet_GB_Used: 5.5)
 
-var I3 = Internet(Bill_Id: 01, Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 95, provider_Name: "Bell", Internet_GB_Used: 5.5)
+var I3 = Internet(Bill_Id: "INB003", Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 95, provider_Name: "Bell", Internet_GB_Used: 5.5)
 
-var M1 = Mobile(Bill_Id: 01, Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 12345, Internet_GB_Used: 10.5, Minutes_Used: 99)
+var M1 = Mobile(Bill_Id: "MOBB0001", Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 12345, Internet_GB_Used: 10.5, Minutes_Used: 99)
 
-var M2 = Mobile(Bill_Id: 01, Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 12345, Internet_GB_Used: 10.5, Minutes_Used: 99)
+var M2 = Mobile(Bill_Id: " MOBB0002", Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 12345, Internet_GB_Used: 10.5, Minutes_Used: 99)
 
 //    M1.display()
 
-var H1 = Hydro(Bill_Id: 01, Bill_Date: date3, Bill_Type: BILL_TYPE.HYDRO, Total_Bill_Amount: 60, Agency_Name: "THYDRO", Unit_Consumed: 5.6)
+var H1 = Hydro(Bill_Id: "HYDB0001", Bill_Date: date3, Bill_Type: BILL_TYPE.HYDRO, Total_Bill_Amount: 60, Agency_Name: "THYDRO", Unit_Consumed: 5.6)
 
 //    H1.display()
 
