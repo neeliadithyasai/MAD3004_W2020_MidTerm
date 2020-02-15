@@ -52,7 +52,7 @@ class Customer
         print("Customer Full Name : \(fullName)")
         print("Customer Email ID : \(Email_Id)")
         print("---- Bill Information ----")
-        print("***************************************")
+        print("********************************************")
         for bill in Bills
         {
             bill.value.display()

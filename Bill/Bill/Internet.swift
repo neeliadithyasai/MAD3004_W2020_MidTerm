@@ -22,13 +22,16 @@ class Internet: Bill
     
     override func display() {
 
-        print("*********INTERNET BILL ********")
-        print("Bill_Id \(Bill_Id)")
-        print("Bill_Date \(Bill_Date)")
-        print("Bill_Type \(Bill_Type)")
-        print("provider_Name \(provider_Name)")
-        print("Internet_GB_Used\(Internet_GB_Used)")
-        print("Total_Bill_Amount \(Total_Bill_Amount)")
+        print("***************INTERNET BILL *****************")
+        print("Bill Id : \(Bill_Id)")
+        print("Bill Date : \(Bill_Date)")
+        print("Bill Type : \(Bill_Type)")
+        print("Provider Name : \(provider_Name)")
+        print("Internet Usage : \(Internet_GB_Used) GB")
+        print("***********************************************")
+        print("Total Bill Amount to Pay :\(Total_Bill_Amount)")
+        print("***********************************************")
+        
     }
 
     
