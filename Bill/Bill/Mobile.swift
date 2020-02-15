@@ -30,14 +30,16 @@ class Mobile:Bill
     override func display() {
         
         print("*********MOBILE BILL ********")
-        print("Bill_Id \(Bill_Id)")
-        print("Bill_Date \(Bill_Date)")
-        print("Bill_Type \(Bill_Type)")        
-        print("Mobile_Manufacturer_Name\(Mobile_Manufacturer_Name)")
-        print("Mobile_Number\(Mobile_Number)")
-        print("Internet_GB_Used\(Internet_GB_Used)")
-        print("Minutes_Used\(Minutes_Used)")
-        print("Total_Bill_Amount \(Total_Bill_Amount)")
+        print("Bill Id : \(Bill_Id)")
+        print("Bill Date : \(Bill_Date)")
+        print("Bill Type : \(Bill_Type)")
+        print("Manufacturer Name : \(Mobile_Manufacturer_Name)")
+        print("Mobile Number : \(Mobile_Number)")
+        print("Internet Usage : \(Internet_GB_Used) GB")
+        print("Minutes Usage : \(Minutes_Used) minutes")
+        print("************************************************")
+        print("Total Bill Amount to Pay :\(Total_Bill_Amount)")
+        print("************************************************")
         
         
     }
