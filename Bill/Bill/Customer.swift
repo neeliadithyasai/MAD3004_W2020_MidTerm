@@ -19,18 +19,17 @@ class Customer
         return "\(First_Name) \(Last_Name)"
     }
     var Email_Id: String
-    var Bills: [String: Bill]
+    lazy var Bills: [String: Bill] = [:]
     var Total_Amount_to_pay: Double
       {
           return self.Calculated_Bill()
       }
     
-    init(Customer_Id: Int, First_Name: String ,Last_Name: String,Email_Id: String, Bills: [String: Bill]) {
+    init(Customer_Id: Int, First_Name: String ,Last_Name: String,Email_Id: String) {
        self.Customer_Id = Customer_Id
         self.First_Name = First_Name
         self.Last_Name = Last_Name
        self.Email_Id = Email_Id
-        self.Bills = Bills
      
    }
     
@@ -54,16 +53,10 @@ class Customer
         print("Customer Email ID : \(Email_Id)")
         print("---- Bill Information ----")
         print("***************************************")
-        for (billno, billname) in Bills
-             {
-                print("Bill no : \(billno)")
-                print("Bill Type : \(billname.Bill_Type)")
-                print("Bill ID : \(billname.Bill_Id)")
-                print("Bill Date : \(billname.Bill_Date)")
-                print("Bill Amount : \(billname.Total_Bill_Amount)")
-                
-              }
-     
+        for bill in Bills
+        {
+            bill.value.display()
+        }
         print("Total_Amount_to_pay \(Total_Amount_to_pay)")
         
         
