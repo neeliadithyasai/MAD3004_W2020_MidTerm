@@ -40,6 +40,6 @@ var H1 = Hydro(Bill_Id: 01, Bill_Date: date3, Bill_Type: BILL_TYPE.HYDRO, Total_
 
 var C1 =  Customer(Customer_Id: 01, First_Name: "Adithya Sai", Last_Name: "Neeli", Email_Id: "neeliadithyasai@gmail.com")
 
-C1.Bills = ["01":I1,"02":M1]
+    C1.Bills = ["01":I1,"02":M1,"03": H1]
 
     C1.display()

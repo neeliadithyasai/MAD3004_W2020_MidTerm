@@ -20,7 +20,7 @@ class Customer
     }
     var Email_Id: String
     lazy var Bills: [String: Bill] = [:]
-    var Total_Amount_to_pay: Double
+    var Total_Bill_Amount: Double
       {
           return self.Calculated_Bill()
       }
@@ -36,10 +36,10 @@ class Customer
     private func Calculated_Bill() -> Double
     {
         var t = 0.0
-        for (billno, billname) in Bills
+        for (_, billtype) in Bills
         {
-            print("\(billno)")
-            t=t + billname.Total_Bill_Amount
+
+            t=t + billtype.Total_Bill_Amount
          }
 
         return t
@@ -52,12 +52,14 @@ class Customer
         print("Customer Full Name : \(fullName)")
         print("Customer Email ID : \(Email_Id)")
         print("---- Bill Information ----")
-        print("********************************************")
+        print("***************************************")
         for bill in Bills
         {
             bill.value.display()
         }
-        print("Total_Amount_to_pay \(Total_Amount_to_pay)")
+        print("***************************************")
+        print("Total Bill Amount to Pay : ", "".formatCurrency(Total_Bill_Amount: Total_Bill_Amount))
+        print("***************************************")
         
         
     }

@@ -14,6 +14,7 @@
 		9B541B5B23F60C5B00DAA2E0 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B541B5A23F60C5B00DAA2E0 /* Hydro.swift */; };
 		9B541B5D23F60CA800DAA2E0 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B541B5C23F60CA800DAA2E0 /* Customer.swift */; };
 		9B541B5F23F60DD200DAA2E0 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B541B5E23F60DD200DAA2E0 /* IDisplay.swift */; };
+		9BF8B49C23F77DF20051AE88 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8B49B23F77DF20051AE88 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		9B541B5A23F60C5B00DAA2E0 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		9B541B5C23F60CA800DAA2E0 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9B541B5E23F60DD200DAA2E0 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
+		9BF8B49B23F77DF20051AE88 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				9B541B5A23F60C5B00DAA2E0 /* Hydro.swift */,
 				9B541B5C23F60CA800DAA2E0 /* Customer.swift */,
 				9B541B5E23F60DD200DAA2E0 /* IDisplay.swift */,
+				9BF8B49B23F77DF20051AE88 /* StringExtension.swift */,
 			);
 			path = Bill;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				9B541B5723F60BE900DAA2E0 /* Internet.swift in Sources */,
 				9B541B5523F60B9A00DAA2E0 /* Bill.swift in Sources */,
 				9B541B5F23F60DD200DAA2E0 /* IDisplay.swift in Sources */,
+				9BF8B49C23F77DF20051AE88 /* StringExtension.swift in Sources */,
 				9B541B5D23F60CA800DAA2E0 /* Customer.swift in Sources */,
 				9B541B4E23F6089700DAA2E0 /* main.swift in Sources */,
 				9B541B5923F60C2700DAA2E0 /* Mobile.swift in Sources */,

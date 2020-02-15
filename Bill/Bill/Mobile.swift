@@ -35,9 +35,9 @@ class Mobile:Bill
         print("Bill Type : \(Bill_Type)")
         print("Manufacturer Name : \(Mobile_Manufacturer_Name)")
         print("Mobile Number : \(Mobile_Number)")
-        print("Internet Usage : \(Internet_GB_Used) GB")
+        print("Internet Usage : ","".formatGb(Internet_GB_Used: Internet_GB_Used))
         print("Minutes Usage : \(Minutes_Used) minutes")
-        print("Bill Amount :\(Total_Bill_Amount)")
+        print("Bill Amount : ","".formatCurrency(Total_Bill_Amount: Total_Bill_Amount))
         
         
     }

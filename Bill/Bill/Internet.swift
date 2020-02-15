@@ -27,8 +27,8 @@ class Internet: Bill
         print("Bill Date : \(Bill_Date)")
         print("Bill Type : \(Bill_Type)")
         print("Provider Name : \(provider_Name)")
-        print("Internet Usage : \(Internet_GB_Used) GB")
-        print("Bill Amount : \(Total_Bill_Amount)")
+        print("Internet Usage : ","".formatGb(Internet_GB_Used: Internet_GB_Used) )
+        print("Bill Amount : ","".formatCurrency(Total_Bill_Amount: Total_Bill_Amount))
         
     }
 

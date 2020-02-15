@@ -33,6 +33,6 @@ class Bill:IDisplay
         print("Bill_Id \(Bill_Id)")
         print("Bill_Date \(Bill_Date)")
         print("Bill_Type \(Bill_Type)")
-        print("Total_Bill_Amount \(Total_Bill_Amount)")
+        print("Total_Bill_Amount ","".formatCurrency(Total_Bill_Amount: Total_Bill_Amount))
     }
 }
