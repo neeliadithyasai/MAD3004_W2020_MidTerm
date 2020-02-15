@@ -33,13 +33,13 @@ var I2 = Internet(Bill_Id: "INB002", Bill_Date: date1, Bill_Type: BILL_TYPE.INTE
 
 var I3 = Internet(Bill_Id: "INB003", Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 355, provider_Name: "Simon", Internet_GB_Used: 260.5)
 
-var M1 = Mobile(Bill_Id: "MOBB0001", Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 12345, Internet_GB_Used: 10.5, Minutes_Used: 99)
+var M1 = Mobile(Bill_Id: "MOBB0001", Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 4978654243, Internet_GB_Used: 50.5, Minutes_Used: 99)
 
-var M2 = Mobile(Bill_Id: " MOBB0002", Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 12345, Internet_GB_Used: 10.5, Minutes_Used: 99)
+var M2 = Mobile(Bill_Id: " MOBB0002", Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "fido", Plan_Name: "More Data", Mobile_Number: 4379598043, Internet_GB_Used: 30.5, Minutes_Used: 199)
 
 //    M1.display()
 
-var H1 = Hydro(Bill_Id: "HYDB0001", Bill_Date: date3, Bill_Type: BILL_TYPE.HYDRO, Total_Bill_Amount: 60, Agency_Name: "THYDRO", Unit_Consumed: 5.6)
+var H1 = Hydro(Bill_Id: "HYDB0001", Bill_Date: date3, Bill_Type: BILL_TYPE.HYDRO, Total_Bill_Amount: 60, Agency_Name: "PLANET ENERGY", Unit_Consumed: 5.6)
 
 //    H1.display()
 
