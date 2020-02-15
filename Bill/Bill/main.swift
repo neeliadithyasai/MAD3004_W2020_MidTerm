@@ -43,8 +43,22 @@ var H1 = Hydro(Bill_Id: "HYDB0001", Bill_Date: date3, Bill_Type: BILL_TYPE.HYDRO
 
 //    H1.display()
 
-var C1 =  Customer(Customer_Id: 01, First_Name: "Adithya Sai", Last_Name: "Neeli", Email_Id: "neeliadithyasai@gmail.com")
+var C1 =  Customer(Customer_Id: "C0001", First_Name: "Adithya Sai", Last_Name: "Neeli", Email_Id: "neeliadithyasai@gmail.com")
 
-    C1.Bills = ["01":I1,"02":M1,"03": H1]
+    C1.Bills = ["01":I1,"02":M1]
 
     C1.display()
+
+var C2 =  Customer(Customer_Id: "C0002", First_Name: "Jack", Last_Name: "Holder", Email_Id: "jack.h@gmail.com")
+
+    C2.Bills = ["01":I2,"02":M2,"03": H1]
+
+    C2.display()
+
+var C3 =  Customer(Customer_Id: "C0003", First_Name: "Robert", Last_Name: "Clive", Email_Id: "robert07@gmail.com")
+
+    C2.Bills = ["01":I3]
+
+    C2.display()
+
+

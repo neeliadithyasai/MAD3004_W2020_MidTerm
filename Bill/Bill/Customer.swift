@@ -11,7 +11,7 @@ import Foundation
 class Customer
 {
     
-    var Customer_Id: Int
+    var Customer_Id: String
     var First_Name: String
     var Last_Name: String
     var fullName : String //full name will never reserve memeory
@@ -25,7 +25,7 @@ class Customer
           return self.Calculated_Bill()
       }
     
-    init(Customer_Id: Int, First_Name: String ,Last_Name: String,Email_Id: String) {
+    init(Customer_Id: String, First_Name: String ,Last_Name: String,Email_Id: String) {
        self.Customer_Id = Customer_Id
         self.First_Name = First_Name
         self.Last_Name = Last_Name
