@@ -55,7 +55,7 @@
 		9B541B4123F6089600DAA2E0 = {
 			isa = PBXGroup;
 			children = (
-				9B541B4C23F6089700DAA2E0 /* Bill */,
+				9B541B4C23F6089700DAA2E0 /* C0771910_W2020_MID_TERM_MAD3004 */,
 				9B541B4B23F6089700DAA2E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,7 +68,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B541B4C23F6089700DAA2E0 /* Bill */ = {
+		9B541B4C23F6089700DAA2E0 /* C0771910_W2020_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
 				9B541B4D23F6089700DAA2E0 /* main.swift */,
@@ -80,7 +80,7 @@
 				9B541B5E23F60DD200DAA2E0 /* IDisplay.swift */,
 				9BF8B49B23F77DF20051AE88 /* StringExtension.swift */,
 			);
-			path = Bill;
+			path = C0771910_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
