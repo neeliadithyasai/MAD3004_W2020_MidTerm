@@ -8,3 +8,12 @@
 
 import Foundation
 
+class Insurance: Bill
+{
+       var insurance_Provider = String()
+       var insurance_Type: InsuranceType?
+       var insurance_StartDate: Date = Date()
+       var insurance_EndDate: Date = Date()
+       var total_Days: Int = 0
+       var total_Installment: Double = 0.0
+}
