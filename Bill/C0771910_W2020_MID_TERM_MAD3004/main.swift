@@ -49,7 +49,7 @@ var C2 =  Customer(Customer_Id: "C0002", First_Name: "Jack", Last_Name: "Holder"
 
 var C3 =  Customer(Customer_Id: "C0003", First_Name: "Robert", Last_Name: "Clive", Email_Id: "robert07@gmail.com")
 
-    C2.Bills = ["01":I3]
+    C3.Bills = ["01":I3]
 
   //  C2.display()
 
@@ -60,22 +60,41 @@ customerArray.append(C1)
 customerArray.append(C2)
 customerArray.append(C3)
 
-print("Enter ID of the Customer you want to see the details of...")
-let inputId = readLine()
-
-func getCustomerById(ID: String){
-    switch ID {
-        case "C0001":
-            C1.display()
-        case "C0002":
-            C2.display()
-        case "C0003":
-            C3.display()
-    default:
-        print("No Customer exists with this ID")
+print(" Do you want to display all customer details?")
+let allCustomersDisplay = readLine()
+let finalArray = customerArray
+if(allCustomersDisplay == "Yes")
+{
+for obj in finalArray
+{
+    obj.display()
     }
 }
+    else {
+        
+
+        print("Enter ID of the Customer you want to see the details of...")
+
+
+        let inputId = readLine()
+
+        func getCustomerById(ID: String){
+            switch ID {
+            case "C0001":
+            C1.display()
+            case "C0002":
+            C2.display()
+            case "C0003":
+            C3.display()
+            default:
+                print("No Customer exists with this ID")
+            }
+        }
 getCustomerById(ID: inputId!)
+    }
+
+
+    
 
 
 
