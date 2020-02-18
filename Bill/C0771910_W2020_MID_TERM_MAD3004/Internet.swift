@@ -24,9 +24,6 @@ class Internet: Bill
 
         print("***************INTERNET BILL *****************")
         super.display()
-//        print("Bill Id : \(Bill_Id)")
-//        print("Bill Date : \(Bill_Date)")
-//        print("Bill Type : \(Bill_Type)")
         print("Provider Name : \(provider_Name)")
         print("Internet Usage : ","".formatGb(Internet_GB_Used: Internet_GB_Used) )
         print("Bill Amount : ","".formatCurrency(Total_Bill_Amount: Total_Bill_Amount))

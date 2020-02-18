@@ -16,17 +16,6 @@ let id2 = calendar.date(from: date2)
 let date3 = DateComponents( year: 2016, month: 10, day: 25)
 let id3 = calendar.date(from: date3)
 
-//var input = Date()
-//let formatter = DateFormatter()
-////formatter.dateFormat = "MM/dd/yyyy"
-//formatter.locale = Locale(identifier: "en_US")
-//formatter.dateStyle = .short
-//input = formatter.string(from: input)
-////formatter.string(from: input)
-//  print(input)  // Prints:  2018-12-10 06:00:00 +0000
-//
-
-
 
 
 var I1 = Internet(Bill_Id: "INB001", Bill_Date: id1!, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 195, provider_Name: "Bell", Internet_GB_Used: 95.5)
@@ -88,3 +77,7 @@ func getCustomerById(ID: String){
 }
 getCustomerById(ID: inputId!)
 
+
+
+//https://www.youtube.com/watch?v=GPtVfSC35T8 - got reference for date components
+//https://nsscreencast.com/episodes/367-dates-and-times -got reference for date formatting.
