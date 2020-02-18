@@ -69,3 +69,6 @@ class Customer
 
 
 }
+
+
+//https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html - referred for implementing dictonary
