@@ -60,7 +60,7 @@ customerArray.append(C1)
 customerArray.append(C2)
 customerArray.append(C3)
 
-print(" Do you want to display all customer details?")
+print(" Do you want to display all customer details? (Yes/No)")
 let allCustomersDisplay = readLine()
 let finalArray = customerArray
 if(allCustomersDisplay == "Yes")

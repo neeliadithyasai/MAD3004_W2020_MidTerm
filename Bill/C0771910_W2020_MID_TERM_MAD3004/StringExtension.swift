@@ -21,5 +21,15 @@ extension String{
        {
            return "\(Internet_GB_Used) GB"
        }
-   
+    func validateEmail(enteredEmail:String) -> Bool {
+
+        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+        return emailPredicate.evaluate(with: enteredEmail)
+
+    }
 }
+
+
+
+//https://docs.swift.org/swift-book/LanguageGuide/Extensions.html - refferred for extensions

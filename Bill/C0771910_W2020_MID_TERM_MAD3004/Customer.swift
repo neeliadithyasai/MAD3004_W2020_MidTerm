@@ -50,7 +50,15 @@ class Customer
         print("Details of customer along with it's all bills details")
         print("Customer Id :  \(Customer_Id)")
         print("Customer Full Name : \(fullName)")
-       print("Customer Email ID : \(Email_Id)")
+        if Email_Id.validateEmail(enteredEmail: Email_Id)
+        {
+            print("Customer Email ID : \(Email_Id)")
+            
+        }
+        else{
+            print("email Id is not valid")
+        }
+    
         print("---- Bill Information ----")
         print("***************************************")
         for bill in Bills
