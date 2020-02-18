@@ -68,7 +68,7 @@ customerArray.append(C1)
 customerArray.append(C2)
 customerArray.append(C3)
 
-    print("Enter ID of the Customer you want to see the details of...")
+print("Enter ID of the Customer you want to see the details of...")
 let inputId = readLine()
 
 func getCustomerById(ID: String){

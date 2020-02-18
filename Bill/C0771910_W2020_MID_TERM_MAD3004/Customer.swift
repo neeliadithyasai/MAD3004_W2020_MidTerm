@@ -29,7 +29,7 @@ class Customer
        self.Customer_Id = Customer_Id
         self.First_Name = First_Name
         self.Last_Name = Last_Name
-       self.Email_Id = Email_Id
+        self.Email_Id = Email_Id
      
    }
     
@@ -50,7 +50,7 @@ class Customer
         print("Details of customer along with it's all bills details")
         print("Customer Id :  \(Customer_Id)")
         print("Customer Full Name : \(fullName)")
-        print("Customer Email ID : \(Email_Id)")
+       print("Customer Email ID : \(Email_Id)")
         print("---- Bill Information ----")
         print("***************************************")
         for bill in Bills

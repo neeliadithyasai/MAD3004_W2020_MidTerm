@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B34844023FCA04D0001274B /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B34843F23FCA04D0001274B /* DateExtension.swift */; };
 		9B541B4E23F6089700DAA2E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B541B4D23F6089700DAA2E0 /* main.swift */; };
 		9B541B5523F60B9A00DAA2E0 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B541B5423F60B9A00DAA2E0 /* Bill.swift */; };
 		9B541B5723F60BE900DAA2E0 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B541B5623F60BE900DAA2E0 /* Internet.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B34843F23FCA04D0001274B /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		9B541B4A23F6089700DAA2E0 /* C0771910_W2020_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0771910_W2020_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B541B4D23F6089700DAA2E0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B541B5423F60B9A00DAA2E0 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				9B541B5C23F60CA800DAA2E0 /* Customer.swift */,
 				9B541B5E23F60DD200DAA2E0 /* IDisplay.swift */,
 				9BF8B49B23F77DF20051AE88 /* StringExtension.swift */,
+				9B34843F23FCA04D0001274B /* DateExtension.swift */,
 			);
 			path = C0771910_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				9B541B5723F60BE900DAA2E0 /* Internet.swift in Sources */,
 				9B541B5523F60B9A00DAA2E0 /* Bill.swift in Sources */,
 				9B541B5F23F60DD200DAA2E0 /* IDisplay.swift in Sources */,
+				9B34844023FCA04D0001274B /* DateExtension.swift in Sources */,
 				9BF8B49C23F77DF20051AE88 /* StringExtension.swift in Sources */,
 				9B541B5D23F60CA800DAA2E0 /* Customer.swift in Sources */,
 				9B541B4E23F6089700DAA2E0 /* main.swift in Sources */,
