@@ -13,7 +13,7 @@ class Internet: Bill
     var provider_Name: String = ""
     var Internet_GB_Used: Double = 0.0
     
-   init(Bill_Id: String, Bill_Date: DateComponents, Bill_Type: BILL_TYPE, Total_Bill_Amount: Double,provider_Name: String, Internet_GB_Used: Double) {
+   init(Bill_Id: String, Bill_Date: Date, Bill_Type: BILL_TYPE, Total_Bill_Amount: Double,provider_Name: String, Internet_GB_Used: Double) {
     super.init(Bill_Id: Bill_Id, Bill_Date: Bill_Date, Bill_Type: Bill_Type, Total_Bill_Amount: Total_Bill_Amount)
         
         self.provider_Name = provider_Name
@@ -23,9 +23,10 @@ class Internet: Bill
     override func display() {
 
         print("***************INTERNET BILL *****************")
-        print("Bill Id : \(Bill_Id)")
-        print("Bill Date : \(Bill_Date)")
-        print("Bill Type : \(Bill_Type)")
+        super.display()
+//        print("Bill Id : \(Bill_Id)")
+//        print("Bill Date : \(Bill_Date)")
+//        print("Bill Type : \(Bill_Type)")
         print("Provider Name : \(provider_Name)")
         print("Internet Usage : ","".formatGb(Internet_GB_Used: Internet_GB_Used) )
         print("Bill Amount : ","".formatCurrency(Total_Bill_Amount: Total_Bill_Amount))

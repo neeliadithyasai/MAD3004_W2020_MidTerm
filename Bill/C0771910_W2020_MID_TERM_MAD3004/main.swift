@@ -10,8 +10,11 @@ import Foundation
 
 let calendar = Calendar.current
 var date1 = DateComponents( year: 1996, month: 08, day: 11)
+let id1 = calendar.date(from: date1)
 let date2 = DateComponents( year: 2016, month: 09, day: 24)
+let id2 = calendar.date(from: date2)
 let date3 = DateComponents( year: 2016, month: 10, day: 25)
+let id3 = calendar.date(from: date3)
 
 //var input = Date()
 //let formatter = DateFormatter()
@@ -26,20 +29,20 @@ let date3 = DateComponents( year: 2016, month: 10, day: 25)
 
 
 
-var I1 = Internet(Bill_Id: "INB001", Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 195, provider_Name: "Bell", Internet_GB_Used: 95.5)
+var I1 = Internet(Bill_Id: "INB001", Bill_Date: id1!, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 195, provider_Name: "Bell", Internet_GB_Used: 95.5)
 
  //  I1.display()
-var I2 = Internet(Bill_Id: "INB002", Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 295, provider_Name: "Rogers", Internet_GB_Used: 205.5)
+var I2 = Internet(Bill_Id: "INB002", Bill_Date: id2!, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 295, provider_Name: "Rogers", Internet_GB_Used: 205.5)
 
-var I3 = Internet(Bill_Id: "INB003", Bill_Date: date1, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 355, provider_Name: "Simon", Internet_GB_Used: 260.5)
+var I3 = Internet(Bill_Id: "INB003", Bill_Date: id3!, Bill_Type: BILL_TYPE.INTERNET, Total_Bill_Amount: 355, provider_Name: "Simon", Internet_GB_Used: 260.5)
 
-var M1 = Mobile(Bill_Id: "MOBB0001", Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 4978654243, Internet_GB_Used: 50.5, Minutes_Used: 99)
+var M1 = Mobile(Bill_Id: "MOBB0001", Bill_Date: id1!, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "Rogers", Plan_Name: "unlimited", Mobile_Number: 4978654243, Internet_GB_Used: 50.5, Minutes_Used: 99)
 
-var M2 = Mobile(Bill_Id: " MOBB0002", Bill_Date: date2, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "fido", Plan_Name: "More Data", Mobile_Number: 4379598043, Internet_GB_Used: 30.5, Minutes_Used: 199)
+var M2 = Mobile(Bill_Id: " MOBB0002", Bill_Date: id3!, Bill_Type: BILL_TYPE.MOBILE, Total_Bill_Amount: 55, Mobile_Manufacturer_Name: "fido", Plan_Name: "More Data", Mobile_Number: 4379598043, Internet_GB_Used: 30.5, Minutes_Used: 199)
 
 //    M1.display()
 
-var H1 = Hydro(Bill_Id: "HYDB0001", Bill_Date: date3, Bill_Type: BILL_TYPE.HYDRO, Total_Bill_Amount: 60, Agency_Name: "PLANET ENERGY", Unit_Consumed: 5.6)
+var H1 = Hydro(Bill_Id: "HYDB0001", Bill_Date: id2!, Bill_Type: BILL_TYPE.HYDRO, Total_Bill_Amount: 60, Agency_Name: "PLANET ENERGY", Unit_Consumed: 5.6)
 
 //    H1.display()
 
@@ -73,11 +76,11 @@ let inputId = readLine()
 
 func getCustomerById(ID: String){
     switch ID {
-        case "C001":
+        case "C0001":
             C1.display()
-        case "C002":
+        case "C0002":
             C2.display()
-        case "C003":
+        case "C0003":
             C3.display()
     default:
         print("No Customer exists with this ID")

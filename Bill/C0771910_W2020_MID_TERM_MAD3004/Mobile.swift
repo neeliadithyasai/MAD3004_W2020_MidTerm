@@ -17,7 +17,7 @@ class Mobile:Bill
     var Internet_GB_Used: Double = 0.0
     var Minutes_Used: Double = 0.0
     
-    init(Bill_Id: String, Bill_Date: DateComponents, Bill_Type: BILL_TYPE, Total_Bill_Amount: Double,Mobile_Manufacturer_Name: String, Plan_Name: String, Mobile_Number: Int, Internet_GB_Used: Double, Minutes_Used: Double) {
+    init(Bill_Id: String, Bill_Date: Date, Bill_Type: BILL_TYPE, Total_Bill_Amount: Double,Mobile_Manufacturer_Name: String, Plan_Name: String, Mobile_Number: Int, Internet_GB_Used: Double, Minutes_Used: Double) {
         
         super.init(Bill_Id: Bill_Id, Bill_Date: Bill_Date, Bill_Type: Bill_Type, Total_Bill_Amount: Total_Bill_Amount)
         self.Mobile_Manufacturer_Name = Mobile_Manufacturer_Name
@@ -30,9 +30,10 @@ class Mobile:Bill
     override func display() {
         
         print("*********MOBILE BILL ********")
-        print("Bill Id : \(Bill_Id)")
-        print("Bill Date : \(Bill_Date)")
-        print("Bill Type : \(Bill_Type)")
+        super.display()
+//        print("Bill Id : \(Bill_Id)")
+//        print("Bill Date : \(Bill_Date)")
+//        print("Bill Type : \(Bill_Type)")
         print("Manufacturer Name : \(Mobile_Manufacturer_Name)")
         print("Mobile Number : \(Mobile_Number)")
         print("Internet Usage : ","".formatGb(Internet_GB_Used: Internet_GB_Used))
