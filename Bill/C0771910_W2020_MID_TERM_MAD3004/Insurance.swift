@@ -34,4 +34,26 @@ class Insurance: Bill
       }
     
     
+      func find_Days()->Int{
+          var a = 0
+          a = a.calculate_Days(startDate: insurance_StartDate, endDate: insurance_EndDate)
+          return a
+      }
+      
+      override func display() {
+          super.display()
+          print("         Insurance Provider Name : \(insurance_Provider)")
+          print("         Insurance Type : \(insurance_Type!)")
+          let str1 = insurance_StartDate.formatDate(date: insurance_StartDate)
+          print("         Insurance Start Date : \(str1)")
+          let str2 = insurance_EndDate.formatDate(date: insurance_EndDate)
+          print("         Insurance Start Date : \(str2)")
+          print("         Insurance in Days : \(find_Days())")
+          let i = "".formatCurrency(Total_Bill_Amount: total_Installment)
+          print("         Total Installment to pay : \(i)")
+           print("         ***************************************************")
+          print("")
+      }
+    
+    
 }
