@@ -9,7 +9,7 @@
 import Foundation
 
 enum BILL_TYPE{
-   case  INTERNET, MOBILE, HYDRO
+   case  INTERNET, MOBILE, HYDRO , INSURANCE
 }
 
 class Bill:IDisplay
