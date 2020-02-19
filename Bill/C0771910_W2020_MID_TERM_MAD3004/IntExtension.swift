@@ -13,3 +13,6 @@ extension Int{
         return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day ?? 0
     }
 }
+
+
+//https://stackoverflow.com/questions/24723431/swift-days-between-two-nsdates 
