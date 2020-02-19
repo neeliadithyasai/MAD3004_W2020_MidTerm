@@ -26,7 +26,6 @@ class Internet: Bill
         super.display()
         print("Provider Name : \(provider_Name)")
         print("Internet Usage : ","".formatGb(Internet_GB_Used: Internet_GB_Used) )
-        print("Bill Amount : ","".formatCurrency(Total_Bill_Amount: Total_Bill_Amount))
         
     }
 

@@ -41,7 +41,7 @@ class Insurance: Bill
       }
       
       override func display() {
-          super.display()
+//          super.display()
          print("***************************************************")
           print("Insurance Provider Name : \(insurance_Provider)")
           print("Insurance Type : \(insurance_Type!)")

@@ -29,7 +29,6 @@ class Hydro: Bill
         super.display()
         print("Agency Name : \(Agency_Name)")
         print("Unit Consumed : ","".formatUnits(Unit_Consumed: Unit_Consumed))
-        print("Bill_Amount : ","".formatCurrency(Total_Bill_Amount: Total_Bill_Amount))
     }
 
 }
